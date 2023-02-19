@@ -8,9 +8,9 @@
 
 fetch('./data.json')
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => console.log("primer console.log",json));
 
-// const obj = JSON.parse(plan);
+const obj = JSON.parse(json);
 
-// console.log(obj[1].plan);
-// console.log(obj[2].valor);
+console.log("segundo console.log",obj[1].plan);
+console.log("tercer console.log",obj[2].valor);
