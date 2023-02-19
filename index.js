@@ -8,7 +8,7 @@
 
 fetch('./data.json')
     .then((response) => response.json())
-    .then((json) => console.log("primer console.log",json));
+    .then((json) => console.log("primer console.log "+json));
 
 const obj = JSON.parse(json);
 
